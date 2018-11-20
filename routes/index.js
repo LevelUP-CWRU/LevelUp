@@ -70,14 +70,18 @@ module.exports = (app, passport) => {
 
     app.get('/api/cards', (req, res) => {
         card.all((data) => {
-            var hbsObject = {cards:data}
+            var hbsObject = {
+                cards: data
+            }
             res.json(hbsObject)
         })
     })
 
     app.get('/api/users', (req, res) => {
         user.all((data) => {
-            var hbsObject = {allUsers:data}
+            var hbsObject = {
+                allUsers: data
+            }
             res.json(hbsObject)
         })
     })
@@ -91,12 +95,12 @@ module.exports = (app, passport) => {
         ], (result) => {
             res.render('/profile')
             console.log(result)
-        }) 
+        })
     })
 
     app.delete('api/cards/delete/:id', (req, res) => {
         const condition = "id = " + req.params.id;
-        card.delete(condition, function(result) {
+        card.delete(condition, function (result) {
             console.log(result)
         })
         res.redirect('/profile')

@@ -15,16 +15,20 @@ app.use(express.static("public"))
 
 app.use(morgan('dev'));
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 const exphbs = require('express-handlebars')
-app.engine("handlebars", exphbs({defaultLayout: "main"}))
+app.engine("handlebars", exphbs({
+    defaultLayout: "main"
+}))
 app.set("view engine", "handlebars");
 
 app.use(session({
- secret: 'levelupmakesecuritybetter',
- resave:true,
- saveUninitialized: true
+    secret: 'levelupmakesecuritybetter',
+    resave: true,
+    saveUninitialized: true
 }));
 
 app.use(passport.initialize());

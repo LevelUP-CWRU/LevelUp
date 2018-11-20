@@ -1,5 +1,5 @@
 body {
-    background-color:	#F38D68 ;
+    background-color: #F38D68;
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
 
@@ -37,7 +37,7 @@ h3 {
     padding-top: 3%;
     color: #dbe0e6;
     text-align: center;
-    
+
 }
 
 .userpic {
@@ -65,7 +65,7 @@ h3 {
 }
 
 .list-group {
-    border: 2px solid 	#EE6C4D	;
+    border: 2px solid #EE6C4D;
     opacity: 20% !important;
 }
 
@@ -99,7 +99,7 @@ button {
     text-align: center;
     background-color: #33312E;
     color: #53e0dc;
-    border: 2px solid 	#EE6C4D	;
+    border: 2px solid #EE6C4D;
     font-family: 'VT323', monospace;
     margin-top: 3%;
 
@@ -131,5 +131,3 @@ a {
     text-align: center;
     height: 3%;
 }
-
-
